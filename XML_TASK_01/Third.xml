@@ -1,0 +1,43 @@
+<teacher>
+	<teacher>
+		<id>1</id>
+		<firstName>John</firstName>
+		<lastName>Doe</lastName>
+		<address>Address</address>
+		    <flat_no> A/1</flat_no>
+		    <house_no>38</house_no>
+		    <road_no>3</road_no> >
+		    <area>Banani Dhaka</area>> 
+		<department>Sales</department>
+		<salary>20000</salary>
+	</teacher>
+
+
+    <teacher>
+		<id>2</id>
+		<firstName>Mark</firstName>
+		<lastName>Zuckerberg</lastName>
+		<address>Address</address>
+		    <flat_no> A/1</flat_no>
+		    <house_no>20</house_no>
+		    <road_no>18</road_no> >
+		    <area>Mirpur Dhaka</area>> 
+		<department>Accounts</department>
+		<salary>12000</salary>
+	</teacher>
+
+
+	<teacher>
+		<id>3</id>
+		<firstName>Ala</firstName>
+		<lastName>Voski</lastName>
+		<address>Address</address>
+		    <flat_no></flat_no>
+		    <house_no>38</house_no>
+		    <road_no>3</road_no> >
+		    <area>Motijheel</area>> 
+		<department>Human Resource </department>
+		<salary>30000</salary>
+	</teacher>
+
+</teacher>
