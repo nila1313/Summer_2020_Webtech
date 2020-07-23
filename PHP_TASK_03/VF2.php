@@ -1,4 +1,5 @@
 <?php
+#Name Validation
 if(isset($_POST['submit'])){
 	$nm = $_POST['nm'];
 	if($nm == "")
@@ -30,19 +31,142 @@ if(isset($_POST['submit'])){
         }
       else {
       $condition =FALSE;
-      }
+           }
     if( $condition == TRUE)
-   {
-       echo "Next";
-   }
+       {
+       echo "Successful!!!!";
+        }
    else {
        echo "Please Enter Your Name Correctly";
-   }
-   
+        }
+
+ 
+
+#Email Validation
+ $email=$_POST['email'];
+   $condition = False;
+   $positionAt =strpos($email, '@');
+   $positionDotCom = strpos($email, ".com");
+
+
+  if($email=="")
+  {
+    echo "Please Enter Your Email Address ";
+  }
+  elseif( $positionAt==True && $positionDotCom==True)
+    echo "Thank you :",$email;
+
+  else
+  {
+    echo "Try again: ",$email;
+  }
+
+#Gender Validation
+if (isset($_REQUEST['gender']))
+    {
+     $gender = $_REQUEST['gender'];
+        if ($_REQUEST['gender'] == 'Male')
+          {
+            echo "Gender: Male";
+          }
+        elseif($_REQUEST['gender'] == 'Female')
+            {
+              echo "Gender: Female";
+            }
+         elseif($_REQUEST['gender'] == 'Other')
+            {
+              echo "Gender: Other";
+            }
+           }
+        else
+        {
+         echo "Please Select you Gender";
+        }
+#Date Of Birth Validation
+    $date=$_POST['date'];
+    $month=$_POST['month'];
+    $year=$_POST['year'];
+if(isset($_POST['submit']))
+{
 	
+    if(empty($date)||empty($month)||empty($year))
+    {
+      echo "Please try again!";
+    }
 
+elseif(($date>=1 && $date<=31) && ($month >=1 && $month<=12) && ($year >=1900 && $year <=2016))
+     {
+    echo "Thank You for yor DOB!";
+     }
+else {
+    echo "Please try again!";
+     }
+ }
+#Degree Validation
+if (isset($_POST['SSC']) || isset($_POST['HSC']) || isset($_POST['BSc'])) 
+{
+	$S=$_POST['SSC'];
 
+	$H=$_POST['HSC'];
+
+	$B=$_POST['BSc'];
+	
+	
 }
+else
+{
+	if (isset($_POST['submit'])) {
+		
+		echo "Selected";
+	}
+	else 
+    {
+		echo "The person does not have a degree";
+	}
+}
+
+# Blood Group Validation
+if (isset($_POST['bloodGroup'])) {
+	$bg=$_POST['bloodGroup'];
+	echo $bg;
+}
+else
+{
+	
+	if(isset($_POST['submit']))
+	{
+		echo "Please Select your Blood Group ";
+	}
+}
+
+
+#File Upload Validation
+$condition=true;
+if(isset($_GET['text']))
+{
+	$Picture=(int)($_GET['text']);
+	if ($Picture<=0) {
+	
+		$condition=false;
+	}
+}
+}
+if (isset($_GET['file'])) {
+	
+	$Picture=$_GET['file'];
+	if ($Picture=="") {
+		
+		$condition=false;
+	}
+}
+if ($condition==false)
+ {
+	
+	echo "This is not correct";
+}
+
+
+
 	
 ?>
 <html>
@@ -71,7 +195,8 @@ if(isset($_POST['submit'])){
 				<tr height="35px">
 					<td >Email</td>
 					<td >
-						<input type="email" name="" value="">
+						<input type="email" name="email" value=""example@any.com"><br>
+				
 					</td>
 					<td ></td>
 					
@@ -79,19 +204,18 @@ if(isset($_POST['submit'])){
 				<tr height="35px">
 					<td>Gender</td>
 					<td >
-						<input type="radio" name="gender" value="">Male
-						<input type="radio" name="gender" value="">Female
-						<input type="radio" name="gender" value="">Other
+						 <input type="radio" name="gender" value="Male">Male
+                         <input type="radio" name="gender" value="Female">Female
+                         <input type="radio" name="gender" value="Other">Othe
 					</td>
 					<td ></td>
 					
 				</tr>
 				<tr height="35px">
 					<td>Date Of Birth</td>
-					<td >
-						<input type="text" size="1%">/
-						<input type="text" size="1%">/
-						<input type="text" size="1%"> (dd/mm/yyyy)
+					<td> <input type="text" name="date" size="1%" value="">/
+						<input type="text" name="month" size="1%" value="">/
+						<input type="text" name="year" size="1%" value=""> 
 					</td>
 					<td ></td>
 					
@@ -116,10 +240,10 @@ if(isset($_POST['submit'])){
 				<tr height="35px">
 					<td>Degree</></td>
 					<td >
-						<input type="checkbox" name="" value="">SSC
-						<input type="checkbox" name="" value="">HSC
-						<input type="checkbox" name="" value="">BSc.
-						<input type="checkbox" name="" value="">MSc.
+						<input type="checkbox" name="SSC" value="SSC"> SSC
+			           <input type="checkbox" name="HSC" value="HSC"> HSC
+			            <input type="checkbox" name="BSc" value="BSc"> BSc
+			
 					</td>
 					<td ></td>
 					
@@ -127,7 +251,7 @@ if(isset($_POST['submit'])){
 				<tr height="35px">
 					<td>Photo</td>
 					<td colspan="2">
-						<input type="button" name="" value="Browse..."> No file selected.
+						<input type="file" name="file" value="Browse..."> 
 					</td>
 					
 				</tr>
