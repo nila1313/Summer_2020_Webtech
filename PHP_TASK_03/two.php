@@ -11,11 +11,11 @@
     echo "Please Enter Your Email Address ";
   }
   elseif( $positionAt==True && $positionDotCom==True)
-    echo "Thank you";
+    echo "Thank you :",$email;
 
   else
   {
-    echo "Try again",$email;
+    echo "Try again: ",$email;
   }
 
 ?>
