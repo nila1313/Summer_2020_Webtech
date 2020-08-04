@@ -9,9 +9,7 @@
 		$password = $_POST['password'];
 		$confirmPassword = $_POST['confirmPassword'];
 		
-		$day = $_POST['day'];
-		$month = $_POST['month'];
-		$year = $_POST['year'];
+		
 
 		if(empty($username) || empty($password) || empty($email) || empty($name) || empty($confirmPassword))
 		{
