@@ -49,62 +49,34 @@
 							<option value="">Computer Science</option>
 							<option value="">Economics</option>
 							<option value="">Commerce</option>
-							<option value="">Geography</option>
+							<option value="">Geography</option><br>
+							
+
 					</td>
+					
+
 					<td ><a href="blog.php">Blog</a></td>
 					<td ><a href="notification.php">Notification</a></td>
 					
-				</tr>
-				<tr height="35px">
-					<td width = "130px">Name</td>
-					<td width = "320px">
-						<input type="text" name="" value="">
-					</td>
-					<td width = "40px"></td>
 					
 				</tr>
 				<tr height="35px">
-					<td >Email</td>
+					<td width = "130px"><a href="math.php">Confirm</a></td>
+					
+				</tr>
+				<tr height="35px">
+					<td>Competition</td>
 					<td >
-						<input type="email" name="" value="">
+						<select name="">
+							
+							<option value="">Math Contest</option>
+							<option value="">Physics Contest</option>
+							<option value="">Chemistry Contest</option>
 					</td>
-					<td ></td>
 					
-				</tr>
-				<tr height="35px">
-					<td>Gender</td>
-					<td >
-						<input type="radio" name="gender" value="">Male
-						<input type="radio" name="gender" value="">Female
-						<input type="radio" name="gender" value="">Other
-					</td>
-					<td ></td>
-					
-				</tr>
-				<tr height="35px">
-					<td>Date Of Birth</td>
-					<td >
-						<input type="text" size="1%">/
-						<input type="text" size="1%">/
-						<input type="text" size="1%"> (dd/mm/yyyy)
-					</td>
-					<td ></td>
-					
-				</tr>
+				<td width = "130px"><a href="payment.php">Payment</a></td>
 				
-				<tr height="35px">
-					<td>Degree</></td>
-					<td >
-						<input type="checkbox" name="" value="">SSC
-						<input type="checkbox" name="" value="">HSC
-						<input type="checkbox" name="" value="">BSc.
-						<input type="checkbox" name="" value="">MSc.
-					</td>
-					<td ></td>
-					
-				</tr>
-				
-				
+								
 				</tr>
 				
 			</table>
