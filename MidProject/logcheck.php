@@ -22,6 +22,8 @@
 			echo $_POST['checkRemember'];
 			if(!empty($user)){
 
+				$_SESSION['username']=$username;
+
 				if(isset($_POST['checkRemember']))
 				{
 					setcookie('username',$user['username'],time()+3655522866465,'/');

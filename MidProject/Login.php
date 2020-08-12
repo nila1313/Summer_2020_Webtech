@@ -65,11 +65,19 @@ if(isset($_COOKIE['remember']))
 	<!DOCTYPE html>
 <html>
 <head>
-	<title>Register Form</title>
+	<title>Login Form</title>
 </head>
 <body>
+	<center>
 <form action="logcheck.php" method="POST">
 	<table>
+		<tr height="70px">
+					<td colspan="3" align="center">
+						<h3><b>LOGIN</b></h3>
+					</td>
+					
+				</tr>
+
 		<tr>
 			
 			<td>
@@ -111,6 +119,7 @@ if(isset($_COOKIE['remember']))
 	</table>
 
 </form>
+</center>
 </body>
 </html>
 

@@ -16,7 +16,7 @@ if(isset($_POST['submit']))
 			$query="INSERT INTO register (Name,username,password,gender,email,phonecode,usertype) Values('".$_POST['name']."','".$_POST['username']."','".$_POST['password']."','".$_POST['gender']."','".$_POST['email']."','".$_POST['phone']."','".$_POST['usertype']."') ";
 			mysqli_query($conn,$query);
 			echo "done";
-			header("location: Login.html");
+			header("location: Login.php");
 
 		}
 		else{
