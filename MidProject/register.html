@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+</head>
+<body>
+<form action="insert.php" method="POST">
+	<table>
+		<tr>
+			
+			<td>
+				Name:
+			</td>
+			<td>
+				<input type="text" placeholder="Name" name="name"
+				required>
+			</td>
+		</tr>
+		<tr>
+			
+			<td>
+				User Name:
+			</td>
+			<td>
+				<input type="text" placeholder="User Name" name="username"
+				required>
+			</td>
+		</tr>
+        <tr>
+			
+			<td>
+				Password:
+			</td>
+			<td>
+				<input type="password" placeholder="Password" name="password" required>
+			</td>
+		</tr>
+		<tr>
+			
+			<td>
+				Confirm Password:
+			</td>
+			<td>
+				<input type="password" placeholder=" Confirm Password" name="confirmpassword" required>
+			</td>
+		</tr>
+		<tr><td>
+			Gender:
+		</td>
+			<td>
+				<input type="radio" name="gender" value="m" required>Male
+				<input type="radio" name="gender" value="f" required>Female
+			</td>
+		</tr>
+		<tr>
+		<td>
+			Email:
+		</td>
+		<td>
+			<input type="mail"placeholder="Email" name="email" required  >
+		</td>
+		</tr>
+		<tr>
+			<td>
+				Phone Number:
+			</td>
+			<td>
+				<select name="phonecode" required>
+				    <option selected hidden value=""> Select Code </option> 
+					<option>
+						+880
+					</option>
+				</select>
+				<input type="phone" placeholder="+880" name="phone" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				User Type:
+			</td>
+			<td>
+				<select name="usertype" required>
+				    <option value="Student">Student</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<input type="Submit" value="Submit" name="submit">
+			<input type="Reset" value="Reset" name="">
+			<a href="Login.html"><u>Login</u></a>
+		</td>
+		</tr>
+
+
+	</table>
+
+</form>
+</body>
+</html>
