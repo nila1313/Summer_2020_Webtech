@@ -4,6 +4,6 @@
 	<title>Notification</title>
 </head>
 <body>
-New courses are waiting for you !!! 
+New courses are waiting for you!!! 
 </body>
 </html>

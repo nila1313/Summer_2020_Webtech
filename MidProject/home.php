@@ -72,11 +72,23 @@
 							<option value="">Math Contest</option>
 							<option value="">Physics Contest</option>
 							<option value="">Chemistry Contest</option>
+
 					</td>
 					
+					
+				</tr>
+				
+	
+				</tr>
 				<td width = "130px"><a href="payment.php">Payment</a></td>
 				
-								
+				</tr>
+				
+	
+				</tr>
+				<td width = "130px"><a href="tips.php">Tips For Student</a></td>
+				
+				
 				</tr>
 				
 			</table>
