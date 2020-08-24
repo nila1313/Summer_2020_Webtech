@@ -1,27 +1,62 @@
 
 "use strict"
 
-
-function Validate(){
+var validation=false;
+function nameValidate(){
   
   var username = document.getElementById('username').value; 
  
 
   if(username==""){
    
-    document.getElementById('userMsg').innerHTML="*Name is not available";
-    return false;
+    document.getElementById('userMsg').innerHTML="*this field is required";
+    window.validation=false;
 
   }
+
+
+  else if(username.length<2){
    
-  else if( (name>='A' && name<='Z' || name>='a'&& name<='z') && lent< 2)
+    document.getElementById('userMsg').innerHTML="*At least two characters are needed";
+    window.validation=false;
+
+  }
+  else if(username.length<2 && username>='0' && username<='9')
     {   
-         document.getElementById("userMsg").innerHTML="*At least two characteris needed";  
-        return false;
+         document.getElementById("userMsg").innerHTML="*Must be starts with letter ";  
+        window.validation=false;
 
     }
 
-    return true;
+// else if(username=='&'|| username=='$')
+//     {   
+//          document.getElementById("userMsg").innerHTML="*Can Contains A-Z or a-z or dot(.) or dash(-) ";  
+//         window.validation=false;
+
+//     }
+   
+   else if( username>='A' && username<='Z' || username>='a'&& username<='z' || username=='.') || username=='-')
+    {   
+        document.getElementById("userMsg").innerHTML="*Can Contains A-Z or a-z or dot(.) or dash(-) "; 
+        window.validation=true;
+
+    }
+
+ 
+}
+
+function Validate()
+{
+	nameValidate();
+	if(window.validation==true)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+
 }
 
 function remover() {
