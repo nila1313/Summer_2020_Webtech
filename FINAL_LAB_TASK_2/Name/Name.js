@@ -8,7 +8,7 @@ function Validate(){
   if(username==""){
     
 
-    document.getElementById('userMsg').innerHTML="Name is not available";
+    document.getElementById('userMsg').innerHTML="*Name is not available";
 
   }
    
@@ -17,4 +17,8 @@ function Validate(){
 
 function remover() {
   document.getElementById('userMsg').innerHTML="";
+}
+
+function mustNeed(){
+ document.getElementById('userMsg').innerHTML="*this field is required";
 }

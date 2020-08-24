@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="Name.js"></script>
 </head>
 <body>
     <h1>Name</h1>
@@ -11,7 +11,7 @@
 	<table>
             <tr>
 					<td></td>
-					<td><input  type="text" id="username" name="username" value=""></td>
+					<td><input  type="text" id="username" name="username" onkeyup="remover()" onblur="mustNeed()"  ></td>
 					<td id="userMsg"></td>
 			</tr>
 			
@@ -19,7 +19,7 @@
 			<tr>
 					<td></td>
 					<td>
-						<input type="button" name="submit" value="submit" onclick=""> 
+						<input type="button" name="submit" value="submit" onclick="Validate()"> 
 					
 					</td>
 			</tr>
