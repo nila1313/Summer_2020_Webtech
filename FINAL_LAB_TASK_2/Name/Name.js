@@ -10,9 +10,16 @@ function Validate(){
 
     document.getElementById('userMsg').innerHTML="*Name is not available";
 
+
   }
    
+  else if( (name>='A' && name<='Z' || name>='a'&& name<='z') && lent< 2)
+    {   
+         document.getElementById("nameMsg").innerHTML="*At least two characteris needed";  
+        
+    }
 
+    return true;
 }
 
 function remover() {
