@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email</title>
+	<script type="text/javascript" src="Email.js"></script>
+</head>
+<body>
+    <h1>Email</h1>
+   
+    <form action= "Email.php" onsubmit="return Validate()">
+	<table>
+            <tr>
+					<td></td>
+					<td><input  type="email" id="email" name="email" onkeyup="remover()" onblur="mustNeed()"  ></td>
+					<td id="emailMsg"></td>
+			</tr>
+			
+			
+			<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="submit" value="submit"> 
+					
+					</td>
+			</tr>
+		</table>
+
+	</form>
+
+</body>
+</html>

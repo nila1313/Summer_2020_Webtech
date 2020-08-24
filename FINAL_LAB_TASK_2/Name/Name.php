@@ -1,8 +1,8 @@
 <?php
 
-	if (isset($_POST['name'])) {
-		# code...
-		echo $_POST['name'];
+	if (isset($_POST['username'])) {
+		
+		echo $_POST['username'];
 	}
 	else
 	{
