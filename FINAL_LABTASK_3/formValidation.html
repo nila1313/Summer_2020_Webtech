@@ -1,11 +1,13 @@
 <html>
 	<head>
-		
+	
+	<script type="text/javascript" src="formValidation.js"></script>
 	
 	</head>>
+
 	<body>
 		<center>
-			<form action = "#" method = "POST">
+			<form action="formValidation.php" method="post" onsubmit="return Validate()">
 			<table width="28%" border="1">
 				<tr height="70px">
 					<td colspan="3" align="center">
@@ -16,16 +18,17 @@
 				<tr height="35px">
 					<td width = "130px">Name</td>
 					<td width = "320px">
-						<input type="text" name="nm" value="">
+						<input  type="text" id="username" name="username" onkeyup="remover()" onblur="mustNeed()"  ></td>
 					</td>
+					<td id="nameMsg"></td>
 					<td width = "40px"></td>
 					
 				</tr>
 				<tr height="35px">
 					<td >Email</td>
 					<td >
-						<input type="email" name="email" value=""example@any.com"><br>
-				
+						<input type="email" id="email "name="email" onkeyup="remover()" onblur="mustNeed() value=""example@any.com"><br>
+				    
 					</td>
 					<td ></td>
 					
@@ -37,7 +40,7 @@
                          <input type="radio" name="gender" value="Female">Female
                          <input type="radio" name="gender" value="Other">Othe
 					</td>
-					<td ></td>
+					<td id="genderMsg"></td>
 					
 				</tr>
 				<tr height="35px">
@@ -46,7 +49,7 @@
 						<input type="text" name="month" size="1%" value="">/
 						<input type="text" name="year" size="1%" value=""> 
 					</td>
-					<td ></td>
+					<td id="dateofbirthMsg"></td>
 					
 				</tr>
 				<tr height="35px">
