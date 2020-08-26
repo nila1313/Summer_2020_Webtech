@@ -7,11 +7,11 @@
 <body>
     <h1>Name</h1>
    
-    <form action= "Name.php" method="post" onsubmit="return Validate()">
+    <form action= "Name.php"  onsubmit="return Validate()" method="post">
 	<table>
             <tr>
 					<td></td>
-					<td><input  type="text" id="username" name="username" onkeyup="remover()" onblur="Validate()"  ></td>
+					<td><input  type="text" id="username" name="username" onkeyup="remover()" onblur="nameValidate()" onclick="remover()"  ></td>
 					<td id="userMsg"></td>
 			</tr>
 			
