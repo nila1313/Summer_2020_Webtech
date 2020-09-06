@@ -13,7 +13,7 @@
 		
 		
 
-		if(empty($username) || empty($password) || empty($contactNumber ) || empty($profileDescription)|| empty( $industry ) || empty($companywebsite) || empty($companyLogo )) || empty($userAccountId){
+		if(empty($username) || empty($password) || empty($contactNumber ) ||  empty($authorname){
 			header('location: ../views/register.php?error=null_value');
 		}else{
 
@@ -28,9 +28,9 @@
 			$status = insert($user);
 
 			if($status){
-				header('location: ../views/all_users.php?success=done');
+				header('location: ../views/allAuthor.php?success=done');
 			}else{
-				header('location: ../views/create.php?error=db_error');
+				header('location: ../views/createAuthor.php?error=db_error');
 			}
 		}
 	}

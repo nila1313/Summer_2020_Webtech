@@ -1,43 +1,47 @@
 <?php
 	require_once('../php/session_header.php');
 	if (isset($_GET['error'])) {
+		
 		if($_GET['error'] == 'db_error'){
 			echo "Something went wrong...please try again";
 		}
 	}
+
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Add user</title>
+	<title>Add Author</title>
 </head>
 <body>
+
 	<form action="../php/authorController.php" method="post">
 		<fieldset>
-			<legend>Create New Author</legend>
+			<legend>Create New User</legend>
 			<table>
 				<tr>
 					<td>Author Name</td>
-					<td><input type="text" name="author_name"></td>
+					<td><input type="text" name="username"></td>
 				</tr>
+				
 				<tr>
 					<td>Username</td>
 					<td><input type="text" name="username"></td>
 				</tr>
 				<tr>
 					<td>Password</td>
-					<td><input type="text" name="password"></td>
+					<td><input type="password" name="password"></td>
 				</tr>
 				<tr>
 					<td>Contact Number</td>
-					<td><input type="text" name="contact_number"></td>
+					<td><input type="number" name="contactnumber"></td>
 				</tr>
-				
 				<tr>
 					<td></td>
 					<td>
 						<input type="submit" name="create" value="Create"> 
-						<a href="home.php">Back</a>
+						<a href="authorHome.php">Back</a>
 					</td>
 				</tr>
 			</table>
