@@ -37,7 +37,7 @@
 					<td></td>
 					<td>
 						<input type="submit" name="create" value="Create"> 
-						<a href="home.php">Back</a>
+						<a href="AuthorHome.php">Back</a>
 					</td>
 				</tr>
 			</table>
