@@ -12,13 +12,17 @@
 	<title>Add user</title>
 </head>
 <body>
-	<form action="../php/userController.php" method="post">
+	<form action="../php/authorController.php" method="post">
 		<fieldset>
 			<legend>Create New Author</legend>
 			<table>
 				<tr>
 					<td>Author Name</td>
 					<td><input type="text" name="author_name"></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="text" name="password"></td>
 				</tr>
 				<tr>
 					<td>Contact Number</td>
