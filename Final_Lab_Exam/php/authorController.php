@@ -4,22 +4,25 @@
 	require_once('../service/userService.php');
 
 
-	//add user
+	//add author
 	if(isset($_POST['create'])){
-		$username 	        = $_POST['author_name'];
+		$authorname 	    = $_POST['author_name'];
+		$username 	        = $_POST['username'];
 		$password 	        = $_POST['password'];
 		$contactNumber 		= $_POST['contact_number'];
 		
+		
 
-
-		if(empty($username) || empty($password) || empty($email)){
+		if(empty($username) || empty($password) || empty($contactNumber ) || empty($profileDescription)|| empty( $industry ) || empty($companywebsite) || empty($companyLogo )) || empty($userAccountId){
 			header('location: ../views/register.php?error=null_value');
 		}else{
 
 			$user = [
-				'username'=> $username,
+				'author_name'=> $username,
+				'username'=> $authorname ,
 				'password'=> $password,
-				'email'=> $email
+				'contact_number'=> $contactNumber,
+				
 			];
 
 			$status = insert($user);
