@@ -37,8 +37,8 @@
 			<td><?=$users[$i]['contactnumber']?></td>
 			
 			<td>
-				<a href="edit.php?id=<?=$users[$i]['id']?>">Edit</a> |
-				<a href="delete.php?id=<?=$users[$i]['id']?>">Delete</a> 
+				<a href="authorEdit.php?id=<?=$users[$i]['id']?>">Edit</a> |
+				<a href="authorDelete.php?id=<?=$users[$i]['id']?>">Delete</a> 
 			</td>
 		</tr>
 
